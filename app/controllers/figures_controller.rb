@@ -38,7 +38,7 @@ class FiguresController < ApplicationController
   end
 
   patch 'figures/:id' do #UPDATE: edit instance of the figure
-    @figure = Figure.find_by_id(params[:id])
+    @figure = Figure.find_by_id(id: params[:id])
     @figure.update(params[:figure])
 
     if !params[:title][:name].empty?
