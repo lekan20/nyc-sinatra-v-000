@@ -5,7 +5,7 @@ class FiguresController < ApplicationController
     erb :'figures/index'
   end
 
-  get 'figures/new' do #CREATE: make new landmark form
+  get 'figures/new' do #CREATE: make new figures form
     @landmark = Landmark.all
     @titles = Title.all
     erb :'figures/new'
