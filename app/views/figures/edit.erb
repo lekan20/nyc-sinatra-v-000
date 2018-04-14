@@ -9,5 +9,5 @@
 <h5>Edit Title(s)</h5>
 <%Title.all.each do |title|%>
 <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id="<%=title.name%>"
-<%='checked' if @figure.titles.include?(title)%> > <%=title.name%> </input>
+ </input>
 <%end%>
