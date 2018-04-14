@@ -37,4 +37,8 @@ class FiguresController < ApplicationController
     erb :'/figures/edit'
   end
 
+  patch 'figures/:id' do #UPDATE: edit instance of the figure
+
+  end
+
 end
