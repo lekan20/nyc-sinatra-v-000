@@ -38,6 +38,7 @@ class FiguresController < ApplicationController
   end
 
   patch 'figures/:id' do #UPDATE: edit instance of the figure
+    binding.pry
     @figure = Figure.find_by_id(params[:id])
     @figure.update(params[:figure])
 
